@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  background-color: hsl(126, 30%, 94%);
+}
+
+/* Navigation Bar styles*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.topName {
+  font-family:'Akaya Telivigala', cursive;
+  font-size: 30px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* home styles */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: url(images/bgCover.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  z-index: -1;
+}
+
+.naming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  color: white;
+}
+
+.introName {
+  font-size: 2.2rem;
+  font-family: 'Ubuntu', sans-serif;
+   color:#97f0f7; 
+  /* background: linear-gradient(
+   70deg,
+   #0546FF 0%,
+   #7497FA 36%,
+   #D912FF 70%,
+   #E677FB 100%);
+   padding: 5px;
+   background-clip: text;
+   -webkit-background-clip: text; */
+}
+@keyframes typing{
+  from{
+    width:0;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+.introAbout {
+  white-space: nowrap;
+  overflow: hidden;
+  width:20ch;
+  margin-top: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-right: 1px solid;
+  -webkit-font-smoothing: antialiased;
+  animation:typing 2s steps(24) ,blink .5s step-end infinite alternate;
+}
+
+.topImage {
+  height: 200px;
+  width: 200px;
+}
+
+/* section1 Learnings styles */
+.section1 {
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: /*url(images/progressCover.jpg) no-repeat;*/linear-gradient(to right, whitesmoke,white);
+  background-size: cover;
+}
+
+i {
+  margin: 6px;
+  font-size: 40px;
+}
+
+.fa-html5 {
+  color: red;
+}
+
+.fa-css3 {
+  color: rgba(0, 0, 255, 0.9);
+}
+
+.fa-js {
+  color: yellow;
+  background-color: black;
+  border: none;
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  left: 15px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+@keyframes loadHTML {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes loadCSS {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 180px;
+  }
+}
+
+@keyframes loadJS {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+@keyframes loadjQuery {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 80px;
+  }
+}
+.progress::after {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 100px;
+  margin: 1px;
+  background: linear-gradient(to right, #fc87da, #cb94ef);
+  border-radius: 8px;
+}
+
+.htmlProgress::after {
+  width: 200px;
+  animation: loadHTML 3s;
+}
+
+.cssProgress::after {
+  width: 180px;
+  animation: loadCSS 2.6s;
+}
+
+.jsProgress::after {
+  width: 100px;
+  animation: loadJS 2s;
+}
+.jQueryProgress::after {
+  width: 80px;
+  animation: loadjQuery 2.2s;
+}
+
+.percent {
+  color: #fc87da;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: -40px;
+}
+
+/* section2 Qualifications styles */
+.section2 {
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background:
+    /*skyblue ;*/
+    linear-gradient(to right, whitesmoke, white);
+
+}
+
+.fa-school {
+  font-size: 20px;
+}
+
+.sec2Topic {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sec2Para {
+  text-align: center;
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* section3 My Work styles */
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background:
+    /*#fff000;*/
+    linear-gradient(to right, whitesmoke, white);
+}
+
+.sec3Topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-book {
+  font-size: 20px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(240, 248, 255, 0.8), white);
+  width: 100%;
+}
+@media (min-width :756px){
+
+.section3{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projects{
+  width: 50%;
+  height: 70%;
+}
+
+}
+.projectPara {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+/* footer styles */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(93, 138, 168, 1);
+  padding: 30px 10px;
+  color: whitesmoke;
+}
+
+.linkDiv {
+  padding: 20px 0;
+}
+
+input {
+  appearance: none;
+}
+
+.copyright,
+.thanks {
+  font-weight: 300 !important;
+}
+
+.thanks {
+  position: relative;
+  top: 20px;
+}
+
+.link {
+  color: white;
+  background-color: #C52DF5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.link:active {
+  box-shadow: 0px 0px 0px black;
+  transform: translate(3px, 3px)
+}

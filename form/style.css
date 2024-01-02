@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+#screen {
+    font-size: 5rem;
+    padding: 5rem;
+    border: 5px solid rgb(10, 148, 22);
+    border-radius: 1rem;
+
+}
+
+#btn-div {
+    padding: 4rem;
+}
+
+button {
+    padding:1rem 2rem;
+    background-color:green;
+    color: honeydew;
+}
+button:hover{
+    background-color: blueviolet;
+}
+button:active{
+    transform:translateY(5px)
+}

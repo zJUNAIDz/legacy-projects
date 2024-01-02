@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn{
+    padding: .5rem 1.5rem;
+    background-color: rgb(39, 44, 39);
+    color: rgb(211, 211, 211);
+    border: 1px white;
+    
+}
